@@ -1,8 +1,12 @@
 body {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 38px;
-    background-color: lightgrey;
     padding-top: 54px;
+    background: #1D4350;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #A43931, #1D4350);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #A43931, #1D4350); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
 }
 
 @media (min-width: 992px) {
@@ -21,6 +25,7 @@ body {
     margin-right: auto;
 }
 
+/*
 .login_button{
 
 background:    #aa306c;
@@ -34,6 +39,4 @@ font:          normal 500 18px/1 "Calibri", sans-serif;
 text-align:    center;
 text-shadow:   1px 1px #2e5760;
 }
-
-
-
+*/

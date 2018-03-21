@@ -27,59 +27,60 @@
 <body>
 
 <!-- Navigation Bar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-        <img src="images/BcLogo.png" alt="Bc-Logo" height="42" width="42">
-        <a class="navbar-brand" href="index.html">bcSite</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                aria-controls="navbarResponsive"
-                aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="forum.html">Forum</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="register.html">Register</a>
-                </li>
-                <li class="nav-item">
-                    <a class="btn btn-success" href="http://webprint.brooklyn.cuny.edu/user" role="button">Print!</a>
-                </li>
-            </ul>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="navo">
+        <div class="container">
+            <img class="animated rollIn" src="images/BcLogo.png" alt="Bc-Logo" height="42" width="42">
+            <a class="navbar-brand animated fadeInLeft" href="index.html">bcSite</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="forum.html">Forum</a>
+                    </li>
+                    </li class= "nav-item">
+                    <a class="nav-link" href="login.html">Log in</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-success" href="http://webprint.brooklyn.cuny.edu/user" role="button">Print!</a>
+                    </li>
+                    
+    
+    
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
+<br>
 
-<!--A form for Log in support-->
-<div class="container" id="supporter">
+<!--Login Form-->
+<div class="container jumbotron" id="supporter">
     <form id="support">
-       
+        <!--Username/Email-->
         <div class="form-group">
-            <label for="email_support">Email address</label>
+            <label for="email_support">Username</label>
             <input type="email" class="form-control" id="email_support" placeholder="johndoe@bcmail.com">
         </div>
-
-        <!-- Added Password section-->
+        <!--Password-->
         <div class= "form-group">
             <label for="password">Password</label>
-            <input type="password" class ="form-control" id="password"
-            placeholder="Enter-Password">
-            
+            <input type="password" class ="form-control" id="password">
+        </div>
+
+        <div class= "form-group">
+            <input type="submit" class="btn btn-info" value="Login">
         </div>
 
         <div class="form-group">
+            <span>Forgot your password?</span>
+            <a href="http://www.funnyjunk.com/Still+nothing+to+see+here/funny-pictures/5679319/"> Reset password</a>
+            <br>
             <span> Dont have an account? </span>
-
-             <a href="file:///Users/AbdalAlam/Documents/GitHub/bcSite/register.html"> Sign up</a>
-
-             <a href="http://www.funnyjunk.com/Still+nothing+to+see+here/funny-pictures/5679319/"> Reset password</a>
-        
-
-                 <button class="login_button" type="submit">Login</button>
-
+            <a href="./register.html"> Sign up</a>
         </div>
 
             
