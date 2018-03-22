@@ -23,7 +23,9 @@ body {
     margin-right: auto;
 }
 
-.breadcrumb {
-    background-color: #00000;
-  
+ol.breadcrumb{
+    background-color:  #cc3300;
+    text-decoration-color: white;
+    text-decoration-color: white;
 }
+
