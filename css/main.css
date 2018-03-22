@@ -46,28 +46,5 @@ nav {
     justify-content: center;
 }
 
-/*
-.login_button{
 
-background:    #aa306c;
-background:    -webkit-linear-gradient(#aa306c, #073763);
-background:    linear-gradient(#aa306c, #073763);
-border-radius: 3px;
-padding:       7px 15px;
-color:         #ffffff;
-display:       inline-block;
-font:          normal 500 18px/1 "Calibri", sans-serif;
-text-align:    center;
-text-shadow:   1px 1px #2e5760;
-}
-<<<<<<< HEAD
-
-ol.breadcrumb{
-    background-color:  #cc3300;
-    text-decoration-color: white;
-    text-decoration-color: white;
-}
-
-=======
-*/
 >>>>>>> b54edddc79f0e77ea60a3d81897138b8db1eea2c
