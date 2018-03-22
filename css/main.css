@@ -7,6 +7,39 @@ body {
     background: linear-gradient(to right, #A43931, #1D4350); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+nav {
+    background: #1D4350; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #A43931, #1D4350); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #A43931, #1D4350); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* Homepage */
+#jumbotron_slideshow{
+    padding-top: 30px;
+}
+
+/* Register Form */
+#registration_form{
+    padding-top:25px;
+    padding-bottom:10px;
+}
+#profile_picture {
+    display: flex;
+    justify-content: center;
+}
+
+#register_button {
+    padding-top:8px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Login Form */
+#login_button {
+    display: flex;
+    justify-content: center;
+}
+
 /*
 .login_button{
 
@@ -31,4 +64,3 @@ ol.breadcrumb{
 
 =======
 */
->>>>>>> 2c32c282dff7a7a43383cfa94638455f854ba2ed

@@ -6,18 +6,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!--Reference to Google Fonts, local CSS file, Bootstrap-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans" type="text/css">
-    <link rel="stylesheet" href="css/main.css">
+    <!-- Reference to Google Fonts, local CSS file, Bootstrap, Animate.css -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+    <link rel="stylesheet" href="css/main.css">
 
-    <!--Scripts used for Bootstrap-->
-    <script src="bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <!-- Scripts (Local Files) -->
+    <script src="js/script.js"></script>
+
+    <!-- Scripts used for Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
             integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-            crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
             crossorigin="anonymous"></script>
 
     <title>bcSite</title>
@@ -27,10 +27,10 @@
 <body>
 
 <!-- Navigation Bar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="navo">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-        <img class="animated rollIn" src="images/BcLogo.png" alt="Bc-Logo" height="42" width="42">
-        <a class="navbar-brand animated fadeInLeft" href="index.html">bcSite</a>
+        <img src="images/BcLogo.png" alt="Bc-Logo" height="50" width="50">
+        <a class="navbar-brand" href="index.html">bcSite</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                 aria-controls="navbarResponsive"
                 aria-expanded="false" aria-label="Toggle navigation">
@@ -47,40 +47,46 @@
                 <li class="nav-item">
                     <a class="btn btn-success" href="http://webprint.brooklyn.cuny.edu/user" role="button">Print!</a>
                 </li>
-
-
             </ul>
         </div>
     </div>
 </nav>
-<br>
 
-<!--Registration/Signup Form-->
-<div class="container jumbotron" id="supporter">
-    <form id="support">
-        <!--Name-->
+<!-- Registration/Signup Form -->
+<div class="container jumbotron col-sm-4" id="registration_form">
+    <form>
+        <!-- Profile Picture -->
+        <div id="profile_picture" class="form-group">
+            <img src="./images/bc_images/bulldog.jpg" alt="..." class="rounded-circle" width="100" height="100">
+        </div>
+        <!-- Name -->
         <div class="form-group">
             <label for="name_support">Name</label>
-            <input type="text" class="form-control" id="name_support" placeholder="John Doe">
+            <input type="text" class="form-control" id="name_support" placeholder="Buster The Bulldog">
         </div>
-        <!--Email Address-->
+        <!-- Email Address -->
         <div class="form-group">
             <label for="email_support">Email address</label>
-            <input type="email" class="form-control" id="email_support" placeholder="johndoe@bcmail.com">
+            <input type="email" class="form-control" id="email_support" placeholder="busterthebulldog@bcmail.com">
         </div>
-        <!--Password-->
+        <!-- Username -->
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="username" class="form-control" id="username" placeholder="@BulldogBuster">
+        </div>
+        <!-- Password -->
         <div class="form-group">
             <label for="password">Password</label>
             <input type="password" class="form-control" id="password"
                    placeholder="">
         </div>
-        <div class="form-group">
-            <input type="submit" class="btn btn-primary" value="Register">
+        <div id = "register_button" class="form-group">
+            <input type="submit" class="btn btn-primary " value="Register">
         </div>
     </form>
 </div>
 
-<!--Google Maps API-->
+<!-- Google Maps API -->
 <!--
 <div class="container" class="align-baseline" id="gmaps">
     <iframe width="600" height="450" frameborder="0" style="border:0"
@@ -88,6 +94,13 @@
             allowfullscreen></iframe>
 </div>
 -->
+
+<!-- Core Scripts used for Bootstrap -->
+<script src="bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>

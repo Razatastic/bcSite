@@ -6,18 +6,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!--Reference to Google Fonts, local CSS file, Bootstrap-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans" type="text/css">
-    <link rel="stylesheet" href="css/main.css">
+    <!--Reference to Google Fonts, local CSS file, Bootstrap, Animate.css-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-    <!--Scripts used for Bootstrap-->
-    <script src="bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <!-- Scripts (Local Files) -->
+    <script src="js/script.js"></script>
+
+    <!-- Scripts used for Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
             integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-            crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
             crossorigin="anonymous"></script>
 
     <title>bcSite</title>
@@ -27,13 +28,12 @@
 <body>
 
 <!-- Navigation Bar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="navo">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-        <img class="animated rollIn" src="images/BcLogo.png" alt="Bc-Logo" height="42" width="42">
-        <a class="navbar-brand animated fadeInLeft" href="index.html">bcSite</a>
+        <img src="images/BcLogo.png" alt="Bc-Logo" height="50" width="50">
+        <a class="navbar-brand" href="index.html">bcSite</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                aria-controls="navbarResponsive"
-                aria-expanded="false" aria-label="Toggle navigation">
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -42,46 +42,80 @@
                     <a class="nav-link" href="forum.html">Forum</a>
                 </li>
                 </li class= "nav-item">
-                <a class="nav-link" href="login.html">Log in</a>
+                    <a class="nav-link" href="login.html">Log in</a>
                 </li>
                 <li class="nav-item">
                     <a class="btn btn-success" href="http://webprint.brooklyn.cuny.edu/user" role="button">Print!</a>
                 </li>
-
-
             </ul>
         </div>
     </div>
 </nav>
-<br>
 
-<!--Login Form-->
-<div class="container jumbotron" id="supporter">
-    <form id="support">
-        <!--Username/Email-->
+<!-- Login Form -->
+<div class="container jumbotron col-sm-4">
+    <form>
+        <!-- Username/Email -->
         <div class="form-group">
             <label for="email_support">Username</label>
-            <input type="email" class="form-control" id="email_support" placeholder="johndoe@bcmail.com">
+            <input type="email" class="form-control" id="email_support" placeholder="busterthebulldog@bcmail.com">
         </div>
-        <!--Password-->
+        <!-- Password -->
         <div class="form-group">
             <label for="password">Password</label>
             <input type="password" class="form-control" id="password">
         </div>
-
-        <div class="form-group">
+        <!-- Login Button -->
+        <div id="login_button" class="form-group">
             <input type="submit" class="btn btn-info" value="Login">
         </div>
-
+        <!-- Forgot Password (linked to modal), Register -->
         <div class="form-group">
             <span>Forgot your password?</span>
-            <a href="http://www.funnyjunk.com/Still+nothing+to+see+here/funny-pictures/5679319/"> Reset password</a>
+            <a href="#password_reset_modal" data-toggle="modal"> Reset password</a>
             <br>
             <span> Dont have an account? </span>
             <a href="./register.html"> Sign up</a>
         </div>
 
+        <!-- Modal (for resetting password) -->
+        <div class="modal fade" id="password_reset_modal" tabindex="-1" role="dialog"
+             aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalTitle">Password Recovery</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <i class="material-icons" style="font-size:14px">email</i>
+                                <label for="email-support">Email</label>
+                                <input type="email" class="form-control" id="email-support"
+                                       placeholder="johndoe@bcmail.com">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" >Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<!--Core Scripts used for Bootstrap-->
+<script src="bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>
+
 
