@@ -15,7 +15,10 @@ body {
 
 /* Homepage */
 #jumbotron_slideshow {
-    padding-top: 30px;
+    padding-bottom: 50px;
+
+
+    color: white;
 }
 
 /* Register Form */
