@@ -1,26 +1,10 @@
 body {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 38px;
-    padding-top: 54px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    padding-top: 100px;
     background: #1D4350; /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #A43931, #1D4350); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #A43931, #1D4350); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-@media (min-width: 992px) {
-    body {
-        padding-top: 56px;
-    }
-}
-
-#support {
-    margin: auto;
-    width: 75%;
-}
-
-#gmaps {
-    margin-left: auto;
-    margin-right: auto;
 }
 
 /*
