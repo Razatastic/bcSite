@@ -2458,6 +2458,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 }
 
 .btn {
+  
   display: inline-block;
   font-weight: 400;
   text-align: center;
@@ -2473,7 +2474,9 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   line-height: 1.5;
   border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
 }
+
 
 .btn:hover, .btn:focus {
   text-decoration: none;
@@ -4695,7 +4698,7 @@ tbody.collapse.show {
   padding: 0.75rem 1rem;
   margin-bottom: 1rem;
   list-style: none;
-  background-color: #e9ecef;
+  background-color: #000000;
   border-radius: 0.25rem;
 }
 

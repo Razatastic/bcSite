@@ -7,6 +7,12 @@ body {
     background: linear-gradient(to right, #A43931, #1D4350); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+<<<<<<< HEAD
+
+ol.breadcrumb{
+    background-color: #ff0000;
+}
+=======
 nav {
     background: #1D4350; /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #A43931, #1D4350); /* Chrome 10-25, Safari 5.1-6 */
@@ -65,3 +71,4 @@ ol.breadcrumb{
 
 =======
 */
+>>>>>>> b54edddc79f0e77ea60a3d81897138b8db1eea2c
