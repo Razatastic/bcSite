@@ -16,8 +16,6 @@ body {
 /* Homepage */
 #jumbotron_slideshow {
     padding-bottom: 50px;
-
-
     color: white;
 }
 
@@ -43,7 +41,13 @@ body {
     justify-content: center;
 }
 
+/* Forum Greeting */
 #forum_welcome_page{
-     margin-left: 86px;
+     margin-left: 85px;
+    color: white;
 
+}
+
+#password_reset_success_alert{
+    display: none;
 }

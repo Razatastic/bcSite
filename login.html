@@ -13,10 +13,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-    <!-- Scripts (Local Files) -->
-    <script src="js/script.js"></script>
-
-    <!-- Scripts used for Bootstrap -->
+    <!-- Scripts used for Bootstrap when site loads -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
 
@@ -76,7 +73,7 @@
             </div>
 
             <!-- Modal (for resetting password) -->
-            <div class="modal fade" id="password_reset_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal fade animated rubberBand" id="password_reset_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -89,13 +86,16 @@
                             <form>
                                 <div class="form-group">
                                     <i class="material-icons" style="font-size:14px">email</i>
-                                    <label for="email-support">Email</label>
-                                    <input type="email" class="form-control" id="email-support" placeholder="johndoe@bcmail.com">
+                                    <label for="password_reset_email">Email</label>
+                                    <input type="email" class="form-control" id="password_reset_email" placeholder="johndoe@bcmail.com">
                                 </div>
                             </form>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-primary">Submit</button>
+                            <!-- Empty div container that is modified by JS after checking if email is valid or not -->
+                            <div id="password_reset_success_alert" class="container alert" role="alert">
+                            </div>
+                            <button id="password_reset_submit_button" type="button" class="btn btn-primary" onclick="emailValidation()">Submit</button>
                         </div>
                     </div>
                 </div>
@@ -103,10 +103,14 @@
         </form>
     </div>
 
+    <!-- Scripts (Local Files) -->
+    <script src="js/script.js"></script>
+
     <!--Core Scripts used for Bootstrap-->
     <script src="bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
+
 </body>
 
 </html>
