@@ -43,11 +43,11 @@ body {
 
 /* Forum Greeting */
 #forum_welcome_page{
-     margin-left: 85px;
     color: white;
 
 }
 
-#password_reset_success_alert{
+/* Hide the alert*/
+#password_reset_alert{
     display: none;
 }
