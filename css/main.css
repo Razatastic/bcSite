@@ -51,3 +51,10 @@ body {
 #password_reset_alert{
     display: none;
 }
+
+/* page numbering */
+#pagination{
+
+    display: flex;
+    justify-content: center;
+}
