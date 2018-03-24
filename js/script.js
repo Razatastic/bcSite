@@ -8,8 +8,7 @@ function emailValidation() {
             document.getElementById("password_reset_alert").innerText = "Success! Please check your email for further instructions.";
             document.getElementById("password_reset_alert").style.display = "block";
         }
-        else
-            {
+        else {
             document.getElementById("password_reset_alert").classList.remove('alert-success');
             document.getElementById("password_reset_alert").classList.add('alert-warning');
             document.getElementById("password_reset_alert").innerText = "Please enter a valid email address and try again.";

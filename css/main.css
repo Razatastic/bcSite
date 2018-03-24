@@ -2,15 +2,21 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     padding-top: 100px;
-    background: #1D4350; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #A43931, #1D4350); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #A43931, #1D4350); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #1D4350;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #A43931, #1D4350);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #A43931, #1D4350);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 #main_navbar {
-    background: #1D4350; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #A43931, #1D4350); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #A43931, #1D4350); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #1D4350;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #A43931, #1D4350);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #A43931, #1D4350);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 /* Homepage */
@@ -21,15 +27,17 @@ body {
 
 /* Register Form */
 #registration_form {
-    padding-top:25px;
-    padding-bottom:10px;
+    padding-top: 25px;
+    padding-bottom: 10px;
 }
+
 #profile_picture {
     display: flex;
     justify-content: center;
 }
+
 #register_button {
-    padding-top:8px;
+    padding-top: 8px;
     display: flex;
     justify-content: center;
 }
@@ -41,19 +49,29 @@ body {
 }
 
 /* Forum Greeting */
-#forum_welcome_page{
+#forum_welcome_page {
     color: white;
-
 }
 
 /* Hide the alert*/
-#password_reset_alert{
+#password_reset_alert {
     display: none;
 }
 
 /* page numbering */
-#pagination{
-
+#pagination {
     display: flex;
     justify-content: center;
 }
+
+#flair_navbar {
+    margin-top: 10px;
+    color: red;
+}
+
+.small_flair {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/*# sourceMappingURL=main.css.map */

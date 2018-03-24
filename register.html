@@ -16,83 +16,86 @@
     <script src="js/script.js"></script>
 
     <!-- Scripts used for Bootstrap -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
 
     <title>bcSite</title>
 </head>
 
 <body>
-    <!-- Navigation Bar -->
-    <nav id = "main_navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
-            <img src="images/BcLogo.png" alt="Bc-Logo" height="50" width="50">
-            <a class="navbar-brand" href="index.html">bcSite</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+<!-- Navigation Bar -->
+<nav id="main_navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <img src="images/BcLogo.png" alt="Bc-Logo" height="50" width="50">
+        <a class="navbar-brand" href="index.html">bcSite</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive"
                 aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="forum.html">Forum</a>
-                    </li>
-                    </li class="nav-item">
-                    <a class="nav-link" href="login.html">Log in</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="btn btn-success" href="http://webprint.brooklyn.cuny.edu/user" role="button">Print!</a>
-                    </li>
-                </ul>
-            </div>
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="forum.html">Forum</a>
+                </li>
+                </li class="nav-item">
+                <a class="nav-link" href="login.html">Log in</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-success" href="http://webprint.brooklyn.cuny.edu/user" role="button">Print!</a>
+                </li>
+            </ul>
         </div>
-    </nav>
-
-    <!-- Registration/Signup Form -->
-    <div class="container animated fadeInUpBig jumbotron col-10 col-sm-8 col-md-8 col-lg-8 col-xl-4" id="registration_form">
-        <form>
-            <!-- Profile Picture -->
-            <div id="profile_picture" class="form-group">
-                <img src="./images/bc_images/bulldog.jpg" alt="..." class="rounded-circle" width="100" height="100">
-            </div>
-            <!-- Name -->
-            <div class="form-group">
-                <label for="name_support">Name</label>
-                <input type="text" class="form-control" id="name_support" placeholder="Buster The Bulldog">
-            </div>
-            <!-- Email Address -->
-            <div class="form-group">
-                <label for="email_support">Email address</label>
-                <input type="email" class="form-control" id="email_support" placeholder="buster@bcmail.com">
-            </div>
-            <!-- Username -->
-            <div class="form-group">
-                <label for="username">Username</label>
-                <input type="username" class="form-control" id="username" placeholder="@BigB">
-            </div>
-            <!-- Password -->
-            <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" class="form-control" id="password" placeholder="">
-            </div>
-            <div id="register_button" class="form-group">
-                <input type="submit" class="btn btn-primary " value="Register">
-            </div>
-        </form>
     </div>
+</nav>
 
-    <!-- Google Maps API -->
-    <!--
+<!-- Registration/Signup Form -->
+<div class="container animated fadeInUpBig jumbotron col-10 col-sm-8 col-md-8 col-lg-8 col-xl-4" id="registration_form">
+    <form>
+        <!-- Profile Picture -->
+        <div id="profile_picture" class="form-group">
+            <img src="./images/bc_images/bulldog.jpg" alt="..." class="rounded-circle" width="100" height="100">
+        </div>
+        <!-- Name -->
+        <div class="form-group">
+            <label for="name_support">Name</label>
+            <input type="text" class="form-control" id="name_support" placeholder="Buster The Bulldog">
+        </div>
+        <!-- Email Address -->
+        <div class="form-group">
+            <label for="email_support">Email address</label>
+            <input type="email" class="form-control" id="email_support" placeholder="buster@bcmail.com">
+        </div>
+        <!-- Username -->
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="username" class="form-control" id="username" placeholder="@BigB">
+        </div>
+        <!-- Password -->
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="">
+        </div>
+        <div id="register_button" class="form-group">
+            <input type="submit" class="btn btn-primary " value="Register">
+        </div>
+    </form>
+</div>
+
+<!-- Google Maps API -->
+<!--
 <div class="container" class="align-baseline" id="gmaps">
-    <iframe width="600" height="450" frameborder="0" style="border:0"
-            src="https://www.google.com/maps/embed/v1/place?q=brooklyn%20college&key=AIzaSyD85QLinrQkGIC4YEkq_jjs0kKYh6LYVtQ"
-            allowfullscreen></iframe>
+<iframe width="600" height="450" frameborder="0" style="border:0"
+        src="https://www.google.com/maps/embed/v1/place?q=brooklyn%20college&key=AIzaSyD85QLinrQkGIC4YEkq_jjs0kKYh6LYVtQ"
+        allowfullscreen></iframe>
 </div>
 -->
 
-    <!-- Core Scripts used for Bootstrap -->
-    <script src="bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+<!-- Core Scripts used for Bootstrap -->
+<script src="bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
 </body>
 
