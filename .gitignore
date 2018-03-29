@@ -1,10 +1,3 @@
 
 .DS_Store
-.idea/bcSite.iml
-.idea/modules.xml
-.idea/workspace.xml
-.idea/vcs.xml
-.idea/dictionaries/Ahmad.xml
-.idea/jsLibraryMappings.xml
-.idea/watcherTasks.xml
-.idea/php.xml
+.idea/
